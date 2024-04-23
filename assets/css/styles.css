@@ -385,14 +385,16 @@ body{
     margin-bottom: 2rem;
     text-align: left;
 }
-.services__subtitle{
+.services__subtitle,
+.projects__subtitle{
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-subtitle);
     margin-bottom: 1.5rem;
 }
 
-.services__title{
+.services__title,
+.projects__title{
     font-size: 6.7rem;
     font-weight: 500;
     line-height: 1.2;
@@ -532,9 +534,52 @@ body{
 }
 
 .projects__subtitle{
+    text-transform: capitalize;
+}
+
+.projects__categories{
+    margin-bottom: 5.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+}
+
+.categories__item{
+    position: relative;
     font-size: 2rem;
     font-weight: bold;
-    text-align: left;
-    color: var(--color-subtitle);
-    margin-bottom: 1.5rem;
+    cursor: pointer;
+    padding: 0.8rem 0;
+}
+
+.categories__item--active{
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.projects__all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem 7rem;
+}
+
+.project__container-img{
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    overflow: hidden;
+}
+
+.project__img{
+    width: 100%;
+    transition: all 600ms ease-in-out;
+}
+
+.projects__project:hover .project__img{
+    transform: scale(1.2);
+}
+
+.project__content{
+    background-color: var(--color-secondary);
+    padding: 4rem 5rem;
+    border-radius: 0 0 30px 30px;
 }
