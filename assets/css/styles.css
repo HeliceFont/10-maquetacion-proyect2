@@ -14,6 +14,7 @@
     --color-bg-dark: #27272E;
     --color-text-description:#99A1AA ;
     --color-hover-dark: #303035;
+    --color-borders: #e3e6e9;
 }
 
 /* ESTILOS GENERALES */
@@ -840,12 +841,15 @@ body{
 
 .clients__item{
     width: calc(25% - 30px);
+    align-items: center;
+    
 }
 
 .clients__img{
     filter: grayscale(100%);
     opacity: 0.3;
     transition: all 300ms ease-in-out;
+    
 }
 
 .clients__item:hover > .clients__img{
@@ -891,4 +895,110 @@ body{
     margin: 0 auto;
     text-align: center;
     
+}
+
+.news__list{
+    display: flex;
+}
+
+.news__new{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 2rem;
+    padding-left: 0;
+    border-top: 1px solid var(--color-borders);
+    border-bottom: 1px solid var(--color-borders);
+    transition: all 300ms ease-in-out;
+}
+
+.news__new:last-child{
+    border-left: 1px solid var(--color-borders);
+    padding-left: 2.5rem;
+}
+
+.news__new:hover{
+    border-top-color: var(--color-primary) ;
+}
+.new__container-img{
+    overflow: hidden;
+    border-radius: 3rem;
+}
+.new__img{
+    border-radius: 3rem;
+    transition: all 300ms ease-in-out;
+}
+
+.news__new:hover .new__img{
+    transform: scale(1.1);
+}
+
+.new__content{
+    flex: 1;
+}
+
+.new__title{
+    font-size: 2.4rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: var(--color-title);
+    margin-bottom: 2rem ;
+    transition: all 300ms ease-in-out;
+}
+
+.new__title:hover,
+.new__more:hover{
+    color:  var(--color-primary);
+}
+
+.new__description{
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: var(--color-text-description);
+    margin-bottom: 3rem;
+
+}
+
+.new__more{
+    display: inline-block;
+    font-weight: 700;
+    color: var(--color-hover-dark);
+    font-size: 1.7;
+    transition: all 300ms ease-in-out;
+}
+
+.new__icon{
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.news__new-shapes{
+    position: absolute;
+    z-index: -1;
+}
+.new-shapes__item{
+    position: relative;
+    z-index: -1;
+  
+}
+.new-shapes--shape1{
+    top: -54rem;
+    left: 18.5rem;
+}
+
+.new-shapes--shape2{
+    right: -15rem;
+    top: -75rem;
+}
+
+.new-shapes--shape3{
+    bottom: 8rem;
+    top: -66rem;
+}
+.new-shapes--shape4{
+    position: absolute;
+    bottom: 53rem;
+    right: 25px;
 }
