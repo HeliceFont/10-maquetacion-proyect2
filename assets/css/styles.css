@@ -1006,7 +1006,7 @@ body{
 
 /* ESTILOS DE CONTACTO */
 
-.layout__content{
+.layuot__contact{
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -1043,4 +1043,51 @@ body{
     font-weight: 500;
     color: var(--color-secondary);
 
+}
+
+.contact__btn{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding:  2.3rem 5.5rem;
+    background-color: var(--color-secondary);
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+}
+
+.contact__btn:hover{
+    background-color: var(--color-bgbtn);
+}
+
+.contact__images{
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid var(--color-borders) ;
+}
+
+.contact__thumb{
+    display: flex;
+    
+
+}
+
+.contact__thumb--chat{
+    margin-left: 49rem;
+    bottom: 0;
+    left: 10rem;
+    z-index: -1;
+}
+
+.contact__thumb--laptop{
+    position: absolute;
+    bottom: 0;
+    left: 16rem;
+}
+.contact__thumb--mobile{
+    position: absolute;
+    bottom: 0;
+    right: 3rem;
 }
