@@ -869,7 +869,7 @@ body{
 .layout__news{
     position: relative;
     z-index: 1;
-    padding: 2rem 0;
+    padding: 10rem 0;
 
 }
 
@@ -989,7 +989,7 @@ body{
 }
 
 .new-shapes--shape2{
-    right: -15rem;
+    right: 0rem;
     top: -75rem;
 }
 
@@ -1012,6 +1012,16 @@ body{
     overflow: hidden;
     padding-top: 14rem;
     padding-bottom: 10rem;
+    
+}
+.layuot__contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 72rem;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: var(--color-primary);
 }
 
@@ -1027,6 +1037,7 @@ body{
 }
 .contact__subtitle{
     display: inline-block;
+    position: relative;
     color: var(--color-bgbtn);
     font-weight: 500;
     font-size: 2rem;
@@ -1035,6 +1046,7 @@ body{
 }
 
 .contact__title{
+    position: relative;
     width: 70%;
     margin: 0 auto;
     margin-bottom: 5.5rem;
@@ -1042,6 +1054,7 @@ body{
     line-height: 1.2;
     font-weight: 500;
     color: var(--color-secondary);
+    
 
 }
 
@@ -1065,17 +1078,20 @@ body{
 .contact__images{
     position: relative;
     text-align: center;
-    border-bottom: 1px solid var(--color-borders) ;
+    
 }
 
 .contact__thumb{
     display: flex;
+    mask-image: linear-gradient(
+        black 80%, transparent
+    );
     
 
 }
 
 .contact__thumb--chat{
-    margin-left: 49rem;
+    margin-left: 44.5rem;
     bottom: 0;
     left: 10rem;
     z-index: -1;
@@ -1089,5 +1105,5 @@ body{
 .contact__thumb--mobile{
     position: absolute;
     bottom: 0;
-    right: 3rem;
+    right: -3rem;;
 }
