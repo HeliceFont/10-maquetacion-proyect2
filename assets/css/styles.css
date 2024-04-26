@@ -904,6 +904,7 @@ body{
 .news__new{
     display: flex;
     align-items: center;
+    cursor: pointer;
     gap: 2rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -921,6 +922,8 @@ body{
 
 .news__new:hover{
     border-top-color: var(--color-primary) ;
+    background-color: rgba(128, 128, 128, 0.363);
+    
 }
 .new__container-img{
     overflow: hidden;
@@ -933,6 +936,7 @@ body{
 
 .news__new:hover .new__img{
     transform: scale(1.1);
+    
 }
 
 .new__content{
@@ -1023,6 +1027,7 @@ body{
     left: 0;
     right: 0;
     background-color: var(--color-primary);
+    z-index: -2;
 }
 
 .contact__container{
@@ -1106,4 +1111,49 @@ body{
     position: absolute;
     bottom: 0;
     right: -3rem;;
+}
+
+.backshapes__item{
+    position: absolute;
+    z-index: -1;
+}
+
+.backshapes--shape1{
+    top: 0 ;
+    left: 32%;
+}
+
+.backshapes--shape2{
+    top: 18rem;
+    left: 18%;
+    opacity: 0.5;
+    animation: moveShape3 30s infinite;
+}
+
+.backshapes--shape3{
+    top: 31%;
+    left: 20%;
+    opacity: 0.5;
+    animation: moveShape4 25s infinite;
+}
+.backshapes--shape4{
+    top: 44%;
+    left: 28%;
+    
+    animation: moveShape3 25s infinite;
+}
+.backshapes--shape5{
+    top: 50%;
+    right: 17%;
+    animation: moveShape4 30s infinite;
+}
+.backshapes--shape6{
+    top: 26%;
+    right: 21%;
+    animation: moveShape5 30s infinite;
+}
+.backshapes--shape7{
+    top: 30%;
+    right: 15%;
+    animation: moveShape3 30s infinite;
 }
