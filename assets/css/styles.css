@@ -607,6 +607,10 @@ body {
     gap: 4rem 7rem;
 }
 
+.projects__project{
+    width: calc(50% - 3.5rem);
+}
+
 .project__container-img {
     width: 100%;
     border-radius: 30px 30px 0 0;
@@ -615,7 +619,7 @@ body {
 
 .project__img {
     width: 100%;
-    transition: all 600ms ease-in-out;
+    transition: all 800ms ease-in-out;
 }
 
 .projects__project:hover .project__img {
