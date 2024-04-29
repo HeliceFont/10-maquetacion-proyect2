@@ -32,6 +32,7 @@
     .clients__container,
     .news__container,
     .footer__container {
+        justify-content: center;
         max-width: 100%;
         padding-left: 3rem;
         padding-right: 3rem;
@@ -39,5 +40,6 @@
 
     .projects__all{
         gap: 3rem;
+        justify-content: center;
     }
 }
