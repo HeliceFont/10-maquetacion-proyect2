@@ -1,14 +1,16 @@
-@media(min-width:1600px){
-    .layout{
+/* desde 166px hasta el max-width */
+@media(min-width:1600px) {
+
+    .layout {
         min-width: 1600px;
     }
 
-    .layout__menu{
+    .layout__menu {
         padding: 5rem 9.5rem;
     }
 
     .layout__banner {
-        
+
         min-height: 85rem;
         margin: 0 9.5rem;
         padding-right: 0;
@@ -19,11 +21,12 @@
 
     .services__service {
         padding: 7rem 5rem;
-        
+
     }
 }
 
 @media(min-width: 1199px) and (max-width: 1400px) {
+
     /* .services__grid, */
     /* .projects__grid, */
     /* .stats__container, */
@@ -38,8 +41,19 @@
         padding-right: 3rem;
     }
 
-    .projects__all{
+    .projects__all {
         gap: 3rem;
         justify-content: center;
     }
+}
+
+@media(max-width:1200px) {
+    .layout {
+        min-width: 992px;
+    }
+
+    .nav__item {
+        margin: 0 2rem;
+    }
+
 }

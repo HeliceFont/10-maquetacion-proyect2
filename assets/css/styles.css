@@ -618,7 +618,7 @@ body {
 }
 
 .project__img {
-    width: 100%;
+    /* width: 100%; */
     transition: all 800ms ease-in-out;
 }
 
