@@ -878,6 +878,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3rem;
+    align-items: center;
 }
 
 .clients__item {
