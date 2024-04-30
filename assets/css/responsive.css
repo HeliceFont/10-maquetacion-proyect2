@@ -170,7 +170,8 @@
     .stats__subtitle,
     .reviews__subtitle,
     .clients__subtitle,
-    .news__subtitle {
+    .news__subtitle,
+    .contact__subtitle{
         font-size: 1.8rem;
     }
 
@@ -178,7 +179,8 @@
     .projects__title,
     .stats__title,
     .reviews__title,
-    .news__title {
+    .news__title,
+    .contact__title {
         font-size: 5rem;
     }
 
@@ -200,16 +202,83 @@
         padding-bottom: 4rem;
     }
 
+    .layout__projects{
+        padding: 8rem 4rem;
+    }
+
     .categories__item{
         font-size: 1.8rem;
     }
+
     .project-shapes--shape1 {
-        top: 2%;
+        top: 3%;
         right: -2%;
     }
+
+    .layout__stats, 
+    .layout__clients{
+        padding: 8rem 5rem;
+        width: 100%;
+    }
+
+    .stats__description,
+    .clients__description{
+        font-size: 1.7rem;
+        width: 100%;
+    }
+
+    .stats__progress{
+        flex-wrap: wrap;
+    }
+
+    .stats__stat{
+        width: calc(50% - 1.5rem);
+    }
+
+    .layout__reviews,
+    .reviews__description{
+        width: 100%;
+        font-size: 1.7;
+    }
+
+    .reviews__container{
+        flex-direction: column;
+    }
+
+    .clients__title{
+        width: 100%;
+        font-size: 5rem;
+    }
+
     .clients__logos {
+        flex-wrap: wrap;
         gap: 13rem;
         align-items: center;
+    }
+
+    .clients__item{
+        width: calc(50% -3rem);
+    }
+
+    .layout__news{
+        padding: 7rem 0;
+    }
+
+    .layuot__contact{
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+
+    .layuot__contact::before{
+        height: 60rem;
+    }
+
+    .contact__title{
+        width: 100%;
+    }
+
+    .contact__btn{
+        padding: 1.5rem 3rem;
     }
 
     .contact__thumb--laptop {
@@ -222,6 +291,10 @@
         width: 59%;
         left: 10rem;
     }
+    .contact__img{
+        width: 82%;
+    }
+
     .fleft__container {
         margin-right: 3rem;
         margin-bottom: 8rem;
