@@ -481,3 +481,51 @@
         margin-right: 0rem;
     }
 }
+@media(max-width: 640px){
+
+    /* .services__grid, */
+    /* .projects__grid, */
+    .layout__projects,
+    .stats__container,
+    .contact__container,
+    .reviews__grid,
+    .clients__container,
+    .news__container,
+    .footer__container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .layout__services{
+        margin-left: 3rem;
+        margin-right: 1rem;
+    }
+
+    .contact__thumb--laptop {
+        left: -1rem;
+    }
+    .contact__thumb--mobile {
+        bottom: 0;
+        margin-right: -9rem;
+    }
+
+    .contact__thumb--chat {
+        margin-right: -5rem;
+        width: 135%;
+        margin-left: 7rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .contact__img {
+        width: 50%;
+    }
+
+    .footer__widget--50{
+        flex-basis: auto;
+    }
+
+    .footer__fright{
+        flex-basis: 100%;
+        gap: 4rem;
+    }
+}
