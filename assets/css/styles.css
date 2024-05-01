@@ -608,7 +608,7 @@ body {
     gap: 4rem 7rem;
 }
 
-.projects__project{
+.projects__project {
     width: calc(50% - 3.5rem);
 }
 
@@ -907,10 +907,11 @@ body {
     top: 10rem;
     right: 0;
 }
-.client-shapes__img{
+
+.client-shapes__img {
     opacity: 0.7;
     z-index: -1;
-    
+
 }
 
 /* ESTILOS ULTIMAS NOTICIAS */
@@ -1386,46 +1387,49 @@ body {
     color: var(--color-text-body);
 }
 
-.copyright__text > a{
+.copyright__text>a {
     display: inline;
 }
 
-.footer__flinks{
+.footer__flinks {
     flex-basis: 50%;
 }
 
-.footer__flinks{
+.footer__flinks {
     position: relative;
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
-    
+
 }
-.flinks__title{
+
+.flinks__title {
     transition: all 300ms ease-in-out;
 }
-.flinks__title:hover{
+
+.flinks__title:hover {
     color: var(--color-bunner);
 }
-.flinks__item--separator::after{
+
+.flinks__item--separator::after {
     content: "";
     height: 4px;
     width: 4px;
-    background-color:  var(--color-text-body);
+    background-color: var(--color-text-body);
     border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 56%;
-    
+
 }
 
 /* NAVEGACIÓN RESPONSIVE */
 
-.navbar__mobile-btn{
+.navbar__mobile-btn {
     display: none;
 }
 
-.mobile-btn__wrap{
+.mobile-btn__wrap {
     height: 5rem;
     width: 5rem;
     background-color: var(--color-text-body);
@@ -1440,7 +1444,7 @@ body {
     justify-content: center;
 }
 
-.mobile-btn__line{
+.mobile-btn__line {
     width: 2rem;
     height: 0.2rem;
     background-color: var(--color-secondary);
@@ -1449,6 +1453,37 @@ body {
     transition: all 300ms ease-in-out;
 }
 
-.menu-mobile{
+.menu-mobile {
     display: block;
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+    width: 30rem;
+    height: 100%;
+    background-color: var(--color-secondary);
+    padding: 5rem 1rem;
+    padding-top: 0;
+    box-shadow: 0px 0px 85px -35px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-mobile__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+    padding: 2rem 0rem;
+    border-bottom: 1px solid var(--color-borders);
+}
+.menu-mobile__container-logo{
+    width: 15rem;
+}
+
+.menu-mobile__container-logo{
+    width: 15rem;
 }
