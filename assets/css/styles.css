@@ -26,6 +26,7 @@ html {
 body {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 
     font-size: 1.6rem;
     font-family: 'DM Sans', sans-serif;
@@ -1416,4 +1417,38 @@ body {
     top: 50%;
     left: 56%;
     
+}
+
+/* NAVEGACIÓN RESPONSIVE */
+
+.navbar__mobile-btn{
+    display: none;
+}
+
+.mobile-btn__wrap{
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--color-text-body);
+    border: none;
+    border-radius: 3.2rem;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-btn__line{
+    width: 2rem;
+    height: 0.2rem;
+    background-color: var(--color-secondary);
+    margin-bottom: 0.4rem;
+    border-radius: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-mobile{
+    display: block;
 }

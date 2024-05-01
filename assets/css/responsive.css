@@ -133,6 +133,10 @@
         display: none;
     }
 
+    .navbar__mobile-btn{
+        display: block;
+    }
+
     .layout__banner {
         min-height: 100%;
         margin: 0 3rem;
@@ -507,6 +511,13 @@
     .contact__thumb--mobile {
         bottom: 0;
         margin-right: -9rem;
+    }
+    .projects__categories {
+        gap: 1rem;
+    }
+    .project-shapes--shape1 {
+        top: 3%;
+        right: 0%;
     }
 
     .contact__thumb--chat {
