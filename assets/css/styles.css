@@ -1454,8 +1454,8 @@ body {
 }
 
 .menu-mobile {
-    visibility: hidden;
-    opacity: 0;
+    /* visibility: hidden;
+    opacity: 0; */
     position: fixed;
     top: 0;
     left: -300px;
@@ -1493,7 +1493,7 @@ body {
     width: 15rem;
 }
 
-.menu-momobile__close{
+.menu-mobile__close{
     background-color: transparent;
     height: 3rem;
     width: 3rem;

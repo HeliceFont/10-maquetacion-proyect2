@@ -30,14 +30,6 @@ document.addEventListener("DOMContentLoaded", (event)=>{
     // PODER CERRAR EL MENU CON EL BOTON X
     let btn_close = document.querySelector(".menu-mobile__close")
 
-    btn_close.addEventListener("click",()=>{
-        let show =document.querySelector(".menu-mobile--show");
-
-        if (show){
-            mobile_menu.classList.remove("menu-mobile--show")
-        }else{
-            mobile_menu.classList.add("menu-mobile--show")
-        }
-    })
+    btn_close.addEventListener("click",showHiddenMenu)
     
 })
