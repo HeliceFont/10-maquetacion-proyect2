@@ -38,18 +38,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 
-// menu_item.forEach(item =>{
-//     item.addEventListener("click", (event) =>{
-//         let submenu = item.lastElementChild;
-//         if(submenu.className = "menu-mobile__submenu-mobile"){
-//             if (submenu.style.display= "block"){
-//                 submenu.style.display= "none"
-//             }else{
-//                 submenu.style.display= "block"
-//             }
-//         }
-//     })
-// })
+
 
 
 
