@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const mobile_btn = document.querySelector(".navbar__mobile-btn");
     const mobile_menu = document.querySelector(".menu-mobile");
 
-     // Funcion mostrar y ocultar menu
+    // Funcion mostrar y ocultar menu
     const showHiddenMenu = () => {
         mobile_menu.classList.toggle("menu-mobile--show");
     }
@@ -27,14 +27,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     //  Desplegar submenus
     let menu_item = document.querySelectorAll(".menu-mobile__item");
-    
-    menu_item.forEach(item =>{
-        item.addEventListener("click", (event) =>{
-            alert(event.target.innerHTML)
-        })
-    })
-});
+    menu_item.forEach(item => {
+        item.addEventListener("click", (event) => {
+            let submenu = item.querySelector(".menu-mobile__submenu-mobile");
+            submenu.classList.toggle("submenu-mobile--show");
+        });
 
+    });
+})
+
+
+
+// menu_item.forEach(item =>{
+//     item.addEventListener("click", (event) =>{
+//         let submenu = item.lastElementChild;
+//         if(submenu.className = "menu-mobile__submenu-mobile"){
+//             if (submenu.style.display= "block"){
+//                 submenu.style.display= "none"
+//             }else{
+//                 submenu.style.display= "block"
+//             }
+//         }
+//     })
+// })
 
 
 
@@ -75,5 +90,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
 //     // Desplegar submenus
 //     let dropdown = document.querySelectorAll()
 
-    
-// })
+

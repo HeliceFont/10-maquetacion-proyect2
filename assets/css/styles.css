@@ -1563,3 +1563,6 @@ body {
     font-weight: 500;
     color: var(--color-text-body);
 }
+.submenu-mobile--show{
+    display: block;
+}
