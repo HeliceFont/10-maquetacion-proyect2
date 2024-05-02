@@ -13,11 +13,19 @@
     --color-bg-projects: #292930;
     --color-bg-dark: #27272E;
     --color-text-description: #99A1AA;
-    --color-hover-dark: #303035;
+    --color-hover-dark: #ffdc60;
     --color-borders: #393940;
 }
 body{
     background-color: #212121;
+}
+
+.nav__title:hover{
+    color: var(--color-secondary);
+}
+
+.nav__title::before{
+    background-color: var(--color-secondary);
 }
 
 .banner__btn{
@@ -26,21 +34,49 @@ body{
 .nav__submenu{
     background-color:var(--color-bunner) ;
 }
+.submenu__title:hover{
+    color: var(--color-secondary);
+}
+
+.submenu__title::after{
+    background-color: var(--color-secondary);
+}
 
 .menu__navbar--fixed{
     background-color: rgba(20, 20, 20, 0.5);
 }
 
+.services__service {
+    background: linear-gradient(180deg, var(--color-bg-services), rgba(100, 94, 42, 0.493));
+    background-color: var(--color-secondary);
+}
+.service__more{
+    color: var(--color-bg-dark);
+}
+.service__more:hover{
+    color: var(--color-hover-dark);
+}
+.service__more::before{
+    color: var(--color-bg-dark);
+}
+
+.contact__subtitle{
+    color: var(--color-hover-dark);
+}
+
+
 .project__content{
     background-color: var(--color-bunner);
 }
+
+
 
 .layuot__contact::before{
     background-color: var(--color-bunner);
 }
 
-.contact__subtitle{
-    color: #ffdc60;
+.project__title:hover{
+    color: var(--color-hover-dark);
 }
 
 .contact__btn{
@@ -54,4 +90,17 @@ body{
 
 .fleft__form-control{
     background-color: #27272E;
+}
+.widget__link:hover {
+    color: var(--color-hover-dark);
+}
+.social__img{
+    color: var(--color-hover-dark);
+}
+
+.social__link:hover>.social__img {
+    color: var(--color-secondary);
+}
+.widget__title {
+    color: var(--color-hover-dark);
 }
