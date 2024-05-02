@@ -104,3 +104,21 @@ body{
 .widget__title {
     color: var(--color-hover-dark);
 }
+
+.switcher__icon-dark{
+    display: block;
+    color: var(--color-hover-dark);
+}
+.switcher__icon-light{
+    display: none;
+}
+
+.mobile-btn__wrap{
+    background-color: #5956e9;
+}
+.menu-mobile__close{
+    background-color: #5956e9;
+}
+.menu-mobile{
+    background-color: var(--color-borders);
+}

@@ -542,3 +542,86 @@
         gap: 4rem;
     }
 }
+
+@media(max-width: 540px){
+    .bunner__title {
+        font-size: 3rem;
+    }
+
+    .banner__btn {
+        padding: 1rem 2.5rem;
+    }
+    .project-shapes--shape2 {
+        top: 9%;
+        right: 54%;
+        opacity: 0.7;
+    }
+    .services__title, 
+    .projects__title, 
+    .stats__title, 
+    .reviews__title, 
+    .news__title, 
+    .contact__title,
+    .clients__title {
+        font-size: 3rem;
+    }
+
+    .stats__progress {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .stats__container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .clients__logos {
+        gap: 6rem;
+        align-items: center;
+    }
+
+    .layout__news {
+        padding: 0rem 0;
+    }
+    .fleft__title{
+        font-size: 4.3rem;
+    }
+    .categories__item {
+        font-size: 1.5rem;
+    }
+    .services__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer__fright {
+        gap: 2rem;
+    }
+    .fleft__group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fleft__mail-icon {
+        margin-left: 0rem;
+    }
+    .stat__title{
+        padding: 1rem;
+    }
+    .stats__stat {
+        width: 50%;
+        text-align: center;
+        
+        
+    } 
+
+}
+
+    
